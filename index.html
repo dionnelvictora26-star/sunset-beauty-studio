@@ -6,73 +6,147 @@
 <title>Sunset Beauty Studio</title>
 
 <style>
-body { margin:0; font-family:Arial; background:#fafafa; }
+body {
+  margin:0;
+  font-family: 'Arial', sans-serif;
+  background: #fff;
+}
 
+/* HEADER */
 header {
-  background:url('IMG_8C20DFCE-A679-4C47-A740-9B1D04C0956E.jpeg') center/cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url('IMG_8C20DFCE-A679-4C47-A740-9B1D04C0956E.jpeg') center/cover;
   height:90vh;
   display:flex;
   align-items:center;
   justify-content:center;
+  text-align:center;
   color:white;
 }
 
-h1 { background:rgba(0,0,0,0.5); padding:20px; border-radius:10px; }
+header h1 {
+  font-size:40px;
+}
 
-.section { padding:40px; text-align:center; }
+header p {
+  font-size:18px;
+  margin-top:10px;
+}
 
+/* BOTONES */
+.btn {
+  display:inline-block;
+  margin-top:20px;
+  background:#ff4d6d;
+  color:white;
+  padding:15px 25px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* SECCIONES */
+.section {
+  padding:50px 20px;
+  text-align:center;
+}
+
+.section h2 {
+  color:#ff4d6d;
+}
+
+/* GALERIA */
 .gallery {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:10px;
+  gap:15px;
 }
 
-.gallery img { width:100%; border-radius:10px; }
+.gallery img {
+  width:100%;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
 
-.btn {
-  background:#ff7e5f;
+/* SERVICIOS */
+.services {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
+.card {
+  background:#fff;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  width:250px;
+}
+
+.card h3 {
+  color:#ff4d6d;
+}
+
+/* FOOTER */
+footer {
+  background:#111;
   color:white;
-  padding:15px;
-  text-decoration:none;
-  border-radius:5px;
+  padding:30px;
+  text-align:center;
 }
-
-footer { background:#111; color:white; padding:20px; }
 </style>
 </head>
 
 <body>
 
 <header>
-  <h1>Sunset Beauty Studio</h1>
+  <div>
+    <h1>Sunset Beauty Studio ✨</h1>
+    <p>Tu belleza, nuestro arte 💖</p>
+    <a class="btn" href="tel:+17252544586">📞 Reserva ahora</a>
+  </div>
 </header>
 
 <div class="section">
-  <h2>Servicios de Belleza</h2>
-  <p>Faciales, cejas, pestañas y más en Las Vegas</p>
+  <h2>Servicios</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Faciales</h3>
+      <p>Limpieza profunda y rejuvenecimiento</p>
+    </div>
+    <div class="card">
+      <h3>Pestañas</h3>
+      <p>Extensiones y lifting profesional</p>
+    </div>
+    <div class="card">
+      <h3>Cejas</h3>
+      <p>Diseño perfecto para tu rostro</p>
+    </div>
+  </div>
 </div>
 
 <div class="section">
   <h2>Galería</h2>
   <div class="gallery">
-
     <img src="dfbdf1d9-5872-4edf-bcc0-d182627ddce9.jpeg">
     <img src="b7c3c8c1-217d-4318-a2be-050aaf1fde66.jpeg">
     <img src="9e84fb3d-e883-4583-9252-9ded834060d.jpeg">
     <img src="702f6974-b3e9-4a99-8246-335dbb84ac7d.jpeg">
     <img src="2ad121a3-c133-4264-b239-183965dff5ae.jpeg">
     <img src="2bf72936-1660-4ac3-85bf-be5f35af353f.jpeg">
-
   </div>
 </div>
 
 <div class="section">
-  <a class="btn" href="tel:+17252544586">Llamar ahora</a>
+  <h2>Contáctanos</h2>
+  <a class="btn" href="tel:+17252544586">📞 Llamar ahora</a>
 </div>
 
 <footer>
   <p>📍 Las Vegas</p>
   <p>📞 +1 (725) 254-4586</p>
+  <p>✨ Sunset Beauty Studio</p>
 </footer>
 
 </body>
